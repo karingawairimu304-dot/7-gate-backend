@@ -6,7 +6,9 @@ const jwt = require("jsonwebtoken");
 const app = express();
 app.use(cors());
 app.use(express.json());
-
+app.get("/", (req, res) => {
+  res.send("API is alive");
+});
 const SECRET = "7gates_secret_key";
 
 // ================= DATABASE (TEMP MEMORY) =================
