@@ -134,16 +134,86 @@ app.post("/customers", (req, res) => {
 });
 
 // ================= PROPERTIES (FULL CONTROL) =================
-let properties = [
+ let properties = [
   {
     id: 1,
-    title: "Modern Apartment",
-    price: "KSh 25,000",
-    location: "Nairobi",
-    image: "https://via.placeholder.com/300"
+    title: "Modern Apartment in Westlands",
+    description: "Spacious 2-bedroom apartment with gym, parking, and security.",
+    location: "Westlands, Nairobi",
+    price: 85000,
+    bedrooms: 2,
+    bathrooms: 2,
+    amenities: ["WiFi", "Parking", "Gym"],
+    image: "apt1.jpg"
   },
   {
     id: 2,
+    title: "Cozy Studio in Kilimani",
+    description: "Stylish studio perfect for solo living, close to malls and cafes.",
+    location: "Kilimani, Nairobi",
+    price: 45000,
+    bedrooms: 1,
+    bathrooms: 1,
+    amenities: ["WiFi", "Security"],
+    image: "apt2.jpg"
+  },
+  {
+    id: 3,
+    title: "Luxury Penthouse",
+    description: "High-end penthouse with city views and rooftop pool.",
+    location: "Upper Hill, Nairobi",
+    price: 250000,
+    bedrooms: 3,
+    bathrooms: 3,
+    amenities: ["Pool", "Gym", "Elevator"],
+    image: "apt3.jpg"
+  },
+  {
+    id: 4,
+    title: "Family Home in Karen",
+    description: "Large 4-bedroom house with garden and private parking.",
+    location: "Karen, Nairobi",
+    price: 180000,
+    bedrooms: 4,
+    bathrooms: 3,
+    amenities: ["Garden", "Parking", "Security"],
+    image: "house1.jpg"
+  },
+  {
+    id: 5,
+    title: "Budget Apartment",
+    description: "Affordable clean apartment near transport routes.",
+    location: "Rongai, Nairobi",
+    price: 25000,
+    bedrooms: 1,
+    bathrooms: 1,
+    amenities: ["Security"],
+    image: "apt4.jpg"
+  },
+  {
+    id: 6,
+    title: "City View Loft",
+    description: "Modern loft with glass windows and open kitchen design.",
+    location: "CBD, Nairobi",
+    price: 90000,
+    bedrooms: 1,
+    bathrooms: 1,
+    amenities: ["WiFi", "Security", "Elevator"],
+    image: "loft1.jpg"
+  },
+  {
+    id: 7,
+    title: "Serviced Apartment",
+    description: "Fully furnished serviced unit with housekeeping included.",
+    location: "Lavington, Nairobi",
+    price: 120000,
+    bedrooms: 2,
+    bathrooms: 2,
+    amenities: ["WiFi", "Cleaning", "Parking"],
+    image: "apt5.jpg"
+  },
+  {
+    id: 8,
     title: "Luxury Villa",
     price: "KSh 120,000",
     location: "Karen",
