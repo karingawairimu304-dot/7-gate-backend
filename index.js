@@ -138,11 +138,11 @@ app.post("/customers", (req, res) => {
   {
     id: 1,
     title: "Modern Apartment in Westlands",
-    description: "Spacious 2-bedroom apartment with gym, parking, and security.",
+    description: "Spacious 4-bedroom apartment with gym, parking, and security.",
     location: "Westlands, Nairobi",
     price: 85000,
-    bedrooms: 2,
-    bathrooms: 2,
+    bedrooms: 4,
+    bathrooms: 4,
     amenities: ["WiFi", "Parking", "Gym"],
     image: "apt1.jpg"
   },
@@ -171,10 +171,10 @@ app.post("/customers", (req, res) => {
   {
     id: 4,
     title: "Family Home in Karen",
-    description: "Large 4-bedroom house with garden and private parking.",
+    description: "Large 5-bedroom house with garden and private parking.",
     location: "Karen, Nairobi",
     price: 180000,
-    bedrooms: 4,
+    bedrooms: 5,
     bathrooms: 3,
     amenities: ["Garden", "Parking", "Security"],
     image: "house1.jpg"
