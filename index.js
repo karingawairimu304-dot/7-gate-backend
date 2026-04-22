@@ -134,6 +134,26 @@ app.post("/customers", (req, res) => {
 });
 
 // ================= PROPERTIES (FULL CONTROL) =================
+let properties = [
+  {
+    id: 1,
+    title: "Modern Apartment",
+    price: "KSh 25,000",
+    location: "Nairobi",
+    image: "https://via.placeholder.com/300"
+  },
+  {
+    id: 2,
+    title: "Luxury Villa",
+    price: "KSh 120,000",
+    location: "Karen",
+    image: "https://via.placeholder.com/300"
+  }
+];
+
+app.get("/properties", (req, res) => {
+  res.json(properties);
+});
 app.get("/properties", (req, res) => {
   res.json(properties);
 });
