@@ -134,7 +134,7 @@ app.post("/customers", (req, res) => {
 });
 
 // ================= PROPERTIES (FULL CONTROL) =================
- let properties = [
+ properties = [
   {
     id: 1,
     title: "Modern Apartment in Westlands",
@@ -215,15 +215,12 @@ app.post("/customers", (req, res) => {
   {
     id: 8,
     title: "Luxury Villa",
-    price: "KSh 120,000",
+    price: "KSh 120000",
     location: "Karen",
     image: "https://via.placeholder.com/300"
   }
 ];
 
-app.get("/properties", (req, res) => {
-  res.json(properties);
-});
 app.get("/properties", (req, res) => {
   res.json(properties);
 });
